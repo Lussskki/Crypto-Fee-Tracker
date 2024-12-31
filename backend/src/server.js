@@ -1,16 +1,20 @@
+// Import database
+import './database/mongoDatabase.js'
+
 // Import express for server handling
 import express from 'express'
-// Import body parser for handling json files
-import bodyParser from 'body-parser'
-// Import dotenv for security
-import dotenv from 'dotenv'
-dotenv.config()
-
 const app = express()
 
-app.get('/', (req,res) => {
-    console.log('Api running')
-})
+// Import body parser for handling JSON files
+import bodyParser from 'body-parser'
+
+// Routes
+import signupRoute from './routes/signupRoute.js'
+import loginRoute from './routes/loginRoute.js'
+
+app.use(bodyParser.json())
+app.use('/api/signup', signupRoute)
+app.use('/api/login', loginRoute)
 
 app.listen(3000, () => {
     console.log('Server listens on http://localhost:3000')
