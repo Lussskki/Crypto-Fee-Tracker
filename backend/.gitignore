@@ -1,5 +1,8 @@
-#folders
+# folders
 node_modules
 
 # dist folder of typescript
 dist
+
+# env folder
+.env
