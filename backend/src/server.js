@@ -11,10 +11,12 @@ import bodyParser from 'body-parser'
 // Routes
 import signupRoute from './routes/signupRoute.js'
 import loginRoute from './routes/loginRoute.js'
+import calcRoute from './routes/pythonRoute.js'
 
 app.use(bodyParser.json())
 app.use('/api/signup', signupRoute)
 app.use('/api/login', loginRoute)
+app.use('/api', calcRoute)
 
 app.listen(3000, () => {
     console.log('Server listens on http://localhost:3000')
