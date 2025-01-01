@@ -1,6 +1,6 @@
-# **CryptoFeeCalc: Bitcoin & Ethereum Fee Calculator**
+# **Crypto-Fee-Calc: Bitcoin & Ethereum Fee Calculator**
 
-**CryptoFeeCalc** is a REST API that calculates transaction fees for Bitcoin and Ethereum. This project uses **Node.js** for the backend and **Python** for fee calculations. Users can send requests with parameters like transaction size, fee rate, gas used, and gas price to get accurate fee estimates for Bitcoin and Ethereum transactions.
+**Crypto-Fee-Calc** is a REST API that calculates transaction fees for Bitcoin and Ethereum. This project uses **Node.js** for the backend and **Python** for fee calculations. Users can send requests with parameters like transaction size, fee rate, gas used, and gas price to get accurate fee estimates for Bitcoin and Ethereum transactions.
 
 ---
 
@@ -8,13 +8,9 @@
 
 - [Project Overview](#project-overview)
 - [Installation](#installation)
-  - [Install Dependencies for Node.js](#install-dependencies-for-nodejs)
-  - [Install Python Dependencies](#install-python-dependencies)
+  - [Clone The Repository](#1-clone-the-repository)  
+  - [Install Dependencies for Node.js](#2-install-dependencies-for-nodejs)
 - [Usage](#usage)
-- [Endpoints](#endpoints)
-- [Technologies](#technologies)
-- [License](#license)
-- [Happy New Year 2025](#happy-new-year-2025)
 
 ---
 
@@ -32,7 +28,7 @@ The project includes the following components:
 
 ## **Installation**
 
-### 1. Clone the Repository
+### **1. Clone the Repository**
 
 Start by cloning the repository to your local machine:
 
@@ -40,6 +36,9 @@ Start by cloning the repository to your local machine:
 git clone https://github.com/yourusername/CryptoFeeCalc.git
 
 ```
+### **2. Install Dependencies for Node.js**
+
+Installed is pnpm package manager and when you `cd backend` write `pnpm install`.
 
 ## **Usage**
 Once the server is up and running, you can interact with the API using Postman or any HTTP client.
@@ -66,7 +65,6 @@ ethereum_gas_price: The gas price in gwei for Ethereum.
 The API will respond with a JSON object containing the calculated fees for Bitcoin and Ethereum:
 
 json
-Copy code
 ```
 {
   "bitcoin": {
