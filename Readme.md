@@ -39,6 +39,8 @@ Start by cloning the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/CryptoFeeCalc.git
 
+```
+
 ## **Usage**
 Once the server is up and running, you can interact with the API using Postman or any HTTP client.
 
@@ -87,3 +89,4 @@ Response:
 
 bitcoin: An object containing btc_fee_satoshis and btc_fee_in_btc.
 ethereum: An object containing eth_fee_in_gwei and eth_fee_in_eth.
+```
