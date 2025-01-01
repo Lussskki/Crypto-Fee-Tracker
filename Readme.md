@@ -50,12 +50,14 @@ You can send a POST request to http://localhost:3000/api/calculate with the foll
 Request Body
 json
 Copy code
+```
 {
   "bitcoin_transaction_size": 250,
   "bitcoin_fee_rate": 10,
   "ethereum_gas_used": 21000,
   "ethereum_gas_price": 20
 }
+```
 bitcoin_transaction_size: The size of the Bitcoin transaction in bytes.
 bitcoin_fee_rate: The fee rate in satoshis per byte for Bitcoin.
 ethereum_gas_used: The gas used for Ethereum transaction.
@@ -65,6 +67,7 @@ The API will respond with a JSON object containing the calculated fees for Bitco
 
 json
 Copy code
+```
 {
   "bitcoin": {
     "btc_fee_satoshis": 2500,
@@ -75,18 +78,20 @@ Copy code
     "eth_fee_in_eth": 0.00042
   }
 }
+```
 Endpoints
 POST /api/calculate
 Description: Calculates the transaction fee for Bitcoin and Ethereum.
 
 Request Body:
-
+```
 bitcoin_transaction_size: Integer (Transaction size in bytes for Bitcoin)
 bitcoin_fee_rate: Integer (Fee rate in satoshis per byte for Bitcoin)
 ethereum_gas_used: Integer (Gas used for Ethereum transaction)
 ethereum_gas_price: Integer (Gas price in gwei for Ethereum)
+```
 Response:
-
+```
 bitcoin: An object containing btc_fee_satoshis and btc_fee_in_btc.
 ethereum: An object containing eth_fee_in_gwei and eth_fee_in_eth.
 ```
